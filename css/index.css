@@ -1,0 +1,7 @@
+body{
+background: #FFB75E; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FFB75E , #ED8F03); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FFB75E , #ED8F03); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       
+}
+.jy-index-main{}
+.jy-index-main p{color: #fff;}
