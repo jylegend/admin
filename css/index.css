@@ -1,7 +1,35 @@
 body{
-background: #FFB75E; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #FFB75E , #ED8F03); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #FFB75E , #ED8F03); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       
+
+
+background: #E0EAFC; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+opacity: 0.7;
 }
-.jy-index-main{}
-.jy-index-main p{color: #fff;}
+.jy-index-main{
+	position: absolute;
+	width: 200px;
+	height: 500px;
+	top:50%;
+	left: 50%;
+	margin: -250px -100px ;
+}
+.jy-index-main p{color: #DE01E0;text-align: center;}
+.jy-index-main .jy-welcome{ 
+	font-size: 50px;
+	color: #DA22FF;
+    background-image: -webkit-linear-gradient(92deg, #DA22FF , #9733EE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+.cursor{cursor: pointer;}
