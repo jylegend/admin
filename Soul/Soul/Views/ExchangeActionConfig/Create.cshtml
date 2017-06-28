@@ -1,0 +1,75 @@
+﻿@model Soul.Models.ExchangeActionConfig
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>ExchangeActionConfig</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ExchangeSource)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ExchangeSource)
+            @Html.ValidationMessageFor(model => model.ExchangeSource)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.StartNo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.StartNo)
+            @Html.ValidationMessageFor(model => model.StartNo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EndNo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EndNo)
+            @Html.ValidationMessageFor(model => model.EndNo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CardPwdType)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CardPwdType)
+            @Html.ValidationMessageFor(model => model.CardPwdType)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ExchangeType)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ExchangeType)
+            @Html.ValidationMessageFor(model => model.ExchangeType)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Remarks)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Remarks)
+            @Html.ValidationMessageFor(model => model.Remarks)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

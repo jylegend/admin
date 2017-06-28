@@ -1,0 +1,57 @@
+﻿@model Soul.Models.ExchangeActionConfig
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ExchangeActionConfig</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ExchangeSource)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ExchangeSource)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StartNo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StartNo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EndNo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EndNo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CardPwdType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CardPwdType)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ExchangeType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ExchangeType)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Remarks)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Remarks)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

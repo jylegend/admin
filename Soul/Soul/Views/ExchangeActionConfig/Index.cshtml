@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Soul.Models.ExchangeActionConfig>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ExchangeSource)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StartNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EndNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CardPwdType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExchangeType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Remarks)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExchangeSource)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StartNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EndNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CardPwdType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExchangeType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Remarks)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
